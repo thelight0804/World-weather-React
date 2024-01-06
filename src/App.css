@@ -8,6 +8,42 @@
 
   margin: 3rem 0;
 }
+
+.weather-box {
+  width: 80%;
+  height: 150px;
+  margin: 5rem auto;
+
+  background-color: pink;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.city {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.tempature {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+.weather {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
 .city-button {
   margin: 5px;
 }

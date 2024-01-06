@@ -12,6 +12,15 @@ function App() {
   return (
     <div>
       <h1 className='title'>세계 현재 날씨</h1>
+      <div className='weather-box'>
+        <div className='weather-info'>
+            <div className='city'>{city}</div>
+          <div>
+            <div className='weather'>{weather}</div>
+            <div className='tempature'>{`${tempature}℃`}</div>
+          </div>
+        </div>
+      </div>
       {cities.map((city, index) => {
         return <Button variant='primary' className='city-button' key={index}>{city}</Button>
       })}
