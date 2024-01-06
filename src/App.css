@@ -51,3 +51,7 @@
 .city-button {
   margin: 5px;
 }
+.city-button-selected {
+  background-color: white !important;
+  color: #0d6cf9 !important;
+}

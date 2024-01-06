@@ -10,6 +10,8 @@ function App() {
   const [tempature, setTempature] = useState(0);
   const [weather, setWeather] = useState('맑음');
 
+  const [selected, setSelected] = useState(0);
+
   return (
     <div>
       <h1 className='title'>세계 현재 날씨</h1>
@@ -27,10 +29,11 @@ function App() {
           return (
               <Button
                 variant="primary"
-                className="city-button"
+                className={`city-button ${city === selected ? 'city-button-selected' : ''}`}
                 key={index}
                 onClick={() => {
                   setCity(cities[index]);
+                  setSelected(cities[index]);
                 }}
               >{city}</Button>
           );
