@@ -14,7 +14,8 @@
   height: 150px;
   margin: 5rem auto;
 
-  background-color: pink;
+  background-color: #b9ddff;
+  border: 5px solid #a1c1df;
   border-radius: 10px;
 
   display: flex;

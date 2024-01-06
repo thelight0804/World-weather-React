@@ -10,7 +10,7 @@ function App() {
   const [tempature, setTempature] = useState(0);
   const [weather, setWeather] = useState('맑음');
 
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(cities[0]);
 
   return (
     <div>
@@ -28,8 +28,8 @@ function App() {
         {cities.map((city, index) => {
           return (
               <Button
-                variant="primary"
-                className={`city-button ${city === selected ? 'city-button-selected' : ''}`}
+                variant={`${city === selected ? 'outline-secondary' : 'secondary'}`}
+                className='city-button'
                 key={index}
                 onClick={() => {
                   setCity(cities[index]);
