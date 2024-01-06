@@ -44,6 +44,10 @@
   text-align: center;
 }
 
+.city-box {
+  width: 80%;
+  margin: 5rem auto;
+}
 .city-button {
   margin: 5px;
 }

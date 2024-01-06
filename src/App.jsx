@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Button from 'react-bootstrap/Button';
 import './App.css'
 
 function App() {
   const cities = ['서울', '도쿄', '베이징', '타이베이', '모스크바', '캔버라', '델리', '런던', '로마', '베를린', 'LA', '케나다', '멕시코', '브라질리아'];
+
   const [city, setCity] = useState(cities[0]);
   const [tempature, setTempature] = useState(0);
   const [weather, setWeather] = useState('맑음');
@@ -21,9 +22,20 @@ function App() {
           </div>
         </div>
       </div>
-      {cities.map((city, index) => {
-        return <Button variant='primary' className='city-button' key={index}>{city}</Button>
-      })}
+      <div className='city-box'>
+        {cities.map((city, index) => {
+          return (
+              <Button
+                variant="primary"
+                className="city-button"
+                key={index}
+                onClick={() => {
+                  setCity(cities[index]);
+                }}
+              >{city}</Button>
+          );
+        })}
+      </div>
     </div>
   )
 }
