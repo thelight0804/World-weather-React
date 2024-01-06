@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+
 import Button from 'react-bootstrap/Button';
+import './App.css'
 
 function App() {
-  const cities = ['서울', '도쿄', '베이징', 'LA', '케나다', '캔버라']; //여기에 값이 1억개가 있어요
+  const cities = ['서울', '도쿄', '베이징', '타이베이', '모스크바', '캔버라', '델리', '런던', '로마', '베를린', 'LA', '케나다', '멕시코', '브라질리아'];
+  const [city, setCity] = useState(cities[0]);
+  const [tempature, setTempature] = useState(0);
+  const [weather, setWeather] = useState('맑음');
 
   return (
     <div>
-      <Button variant="primary" className='city-button'>{cities[0]}</Button>
-      <Button variant="primary" className='city-button'>{cities[1]}</Button>
-      <Button variant="primary" className='city-button'>{cities[2]}</Button>
-      <Button variant="primary" className='city-button'>{cities[3]}</Button>
-      <Button variant="primary" className='city-button'>{cities[4]}</Button>
-      <Button variant="primary" className='city-button'>{cities[5]}</Button>
+      <h1 className='title'>세계 현재 날씨</h1>
+      {cities.map((city, index) => {
+        return <Button variant='primary' className='city-button' key={index}>{city}</Button>
+      })}
     </div>
   )
 }
