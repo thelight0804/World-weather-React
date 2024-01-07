@@ -1,3 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;600;700;900&display=swap');
+
+.title {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+
+  margin: 3rem 0;
+}
+
 .city-button {
   margin: 5px;
+}
+
+.weather-box {
+  width: 80%;
+  height: 150px;
+  margin: 5rem auto;
+
+  background-color: pink;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.city{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.weather{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+.tempature{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.city-box {
+  width: 80%;
+  margin: 5rem auto;
+}
+.city-button-selected {
+  background-color: white !important;
+  color: #205dd1 !important;
 }
