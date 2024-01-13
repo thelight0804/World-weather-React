@@ -3,7 +3,7 @@ import './App.css'
 import Button from 'react-bootstrap/Button';
 
 function App() {
-  const cities = ['서울', '도쿄', '베이징', 'LA', '케나다', '캔버라'];
+  const cities = ['서울', '도쿄', '베이징', 'LA', '케나다', '캔버라', '델리', '런던', '로마', '베를린', 'LA', '케나다', '멕시코', '브라질리아'];
 
   const [city, setCity] = useState(cities[0]);
   const [tempature, setTempature] = useState(0);
