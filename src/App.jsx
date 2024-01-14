@@ -5,6 +5,8 @@ import './App.css'
 import axios from 'axios';
 
 function App() {
+  //API 키
+  const API_KEY = import.meta.env.VITE_OPEN_OPENWEATHER_API_KEY;
   const cities = ['서울', '도쿄', '홋카이도', '베이징', '타이베이', '모스크바', '캔버라', '델리', '런던', '로마', '베를린', 'LA', '케나다', '멕시코', '브라질리아'];
 
   const [city, setCity] = useState(cities[0]);
@@ -75,7 +77,7 @@ function App() {
                   setSelected(cities[index]);
                   setEngCity(cityToEnglish(city));
 
-                  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${engCity}&appid=380c56506511f3a6f0f920b7cd2d139d&units=metric&lang=kr`)
+                  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${engCity}&appid=${API_KEY}&units=metric&lang=kr`)
                     .then((response) => {
                       setTempature(response.data.main.temp);
                       setWeather(response.data.weather[0].description);
