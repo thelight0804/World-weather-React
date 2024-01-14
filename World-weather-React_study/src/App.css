@@ -18,8 +18,10 @@
   height: 150px;
   margin: 5rem auto;
 
-  background-color: pink;
+  background-color: #a4f375;
   border-radius: 10px;
+  
+  border: 5px solid #72a952;
 
   display: flex;
   justify-content: center;
