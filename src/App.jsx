@@ -16,6 +16,17 @@ function App() {
 
   const [selected, setSelected] = useState(cities[0]);
 
+  useEffect(() => {
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${engCity}&appid=${API_KEY}&units=metric&lang=kr`)
+    .then((response) => {
+      setTempature(response.data.main.temp);
+      setWeather(response.data.weather[0].description);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  }, [city])
+
   function cityToEnglish(city) {
     switch (city) {
       case '서울':
@@ -76,15 +87,6 @@ function App() {
                   setCity(cities[index]);
                   setSelected(cities[index]);
                   setEngCity(cityToEnglish(city));
-
-                  axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${engCity}&appid=${API_KEY}&units=metric&lang=kr`)
-                    .then((response) => {
-                      setTempature(response.data.main.temp);
-                      setWeather(response.data.weather[0].description);
-                    })
-                    .catch((error) => {
-                      console.log(error);
-                    });
                 }}
               >{city}</Button>
           );
