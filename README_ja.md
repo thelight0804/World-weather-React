@@ -1,6 +1,6 @@
 # 全世界の都市の天気提供サービス
 
-<a href="https://thelight0804.github.io/World-weather-React/ja">ウェブサイト</a>
+<a href="https://thelight0804.github.io/World-weather-React">ウェブサイト</a>
 <p>GDSC DEU React 初級クラスで行った実習プロジェクトです。 全世界の都市の天気をリアルタイムで確認することができます。</p>
 
 <img src="https://github.com/thelight0804/World-weather-React/assets/69424845/230afb55-72ea-4cb8-8a43-982efc10cec3">
