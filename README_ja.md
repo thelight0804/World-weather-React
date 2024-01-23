@@ -8,7 +8,7 @@
 
 ## アーキテクチャ
 <div align="center">
-  <img src="https://github.com/thelight0804/World-weather-React/assets/69424845/c09162ae-a49e-4e95-9485-9b8df5d7a975" width="70%" align="center">
+  <img src="https://github.com/thelight0804/World-weather-React/assets/69424845/49a7d6b2-f0f0-4473-a6a6-88970bf89ead" width="70%" align="center">
 </div>
 <br><br>
 
