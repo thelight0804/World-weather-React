@@ -60,8 +60,8 @@ function AppJP() {
   return (
     <div>
       <div className='lenguage-box'>
-        <Link to='/' className='lenguage__btn link-unselected'>KR</Link>
-        <Link to='/ja' className='lenguage__btn'>JP</Link>
+        <Link to='/World-weather-React' className='lenguage__btn link-unselected'>KR</Link>
+        <Link to='/World-weather-React/ja' className='lenguage__btn'>JP</Link>
       </div>
       <h1 className='title'>世界の現在の天気</h1>
 
