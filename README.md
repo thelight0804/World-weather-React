@@ -1,8 +1,25 @@
-# React + Vite
+# 전 세계 도시 날씨 제공 서비스
+<p>GDSC DEU React 초급반 스터디에서 진행한 실습 프로젝트입니다. 전 세계 주요 도시의 날씨를 실시간으로 확인할 수 있습니다.</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="https://github.com/thelight0804/World-weather-React/assets/69424845/50ae3872-4e5a-4328-86c2-d8bc617116d8">
+<br><br>
 
-Currently, two official plugins are available:
+## 아키텍처
+<div align="center">
+  <img src="https://github.com/thelight0804/World-weather-React/assets/69424845/c09162ae-a49e-4e95-9485-9b8df5d7a975" width="70%" align="center">
+</div>
+<br><br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 기술 스택
+- React
+- React Bootstrap
+- Axios
+<br><br>
+
+## API
+- OpenWeatherMap API
+<br><br>
+
+## 학습 자료
+- <a href="https://thelight0804.notion.site/GDSC-React-2-85d570f0497e4a0fad0604efda64304e">스터디 페이지</a>
+- <a href="https://thelight0804.notion.site/e2fa4b7770864504a136475e98236191">프로젝트 교육 자료</a>
