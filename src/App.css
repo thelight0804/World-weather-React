@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;600;700;900&display=swap');
 
 .title {
   font-family: 'Noto Sans KR', sans-serif;
@@ -9,37 +9,42 @@
   margin: 3rem 0;
 }
 
+.city-button {
+  margin: 5px;
+}
+
 .weather-box {
   width: 80%;
   height: 150px;
   margin: 5rem auto;
 
-  background-color: #b9ddff;
-  border: 5px solid #a1c1df;
+  background-color: #a4f375;
   border-radius: 10px;
+  
+  border: 5px solid #72a952;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.weather-info {
+.weather-info{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
 }
-.city {
+.city{
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
 }
-.tempature {
+.weather{
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1rem;
   text-align: center;
 }
-.weather {
+.tempature{
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1rem;
   text-align: center;
@@ -49,10 +54,7 @@
   width: 80%;
   margin: 5rem auto;
 }
-.city-button {
-  margin: 5px;
-}
 .city-button-selected {
   background-color: white !important;
-  color: #0d6cf9 !important;
+  color: #205dd1 !important;
 }
